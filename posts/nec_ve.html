@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nec_ve · mobius</title><link rel="stylesheet" href="../style.css"></head>
+<body><main><header nav="n"><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav></header><article><h1>nec_ve</h1>
+<p class="meta">Shell · 更新 2026-05-20 · <a href="https://github.com/mobius/nec_ve">GitHub ↗</a></p>
+<p>ESC4000 G4(Rocky 8.x) 上 3× NEC VE 1.0 的完整验证:39/42 PASS,覆盖驱动、功能、多卡并行、性能基准、NUMA 亲和与故障恢复;含 nfort C+Fortran 混合内核优化。</p>
+
+<p class="note">来自 README:</p><p>适用于 ESC4000 G4 服务器（Rocky Linux 8.x）上安装了三块 NEC VE 1.0 卡的环境。 **测试结果：39/42 PASS，0 FAIL，3 SKIP（MPI 相关，需 mpirun），覆盖硬件识别、驱动、功能、多卡并行、性能基准、稳定性、NUMA 亲和及故障恢复。** &gt; 🚀 **最新优化（2026-05-20）**：切换至 nfort C+Fortran 混合内核，DGEMM 性能从 **54 GFLOPS → 433 GFLOPS（+8×，达峰值 20%）**。 nec_ve/ ├── PerfTest/                  # 测试套件主目录 │   ├── run_tests.s</p>
+</article>
+<div class="foot">mobius · GitHub Pages · <a href="https://github.com/mobius">github.com/mobius</a></div>
+</main></body></html>

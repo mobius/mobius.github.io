@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>s10_bluetooth_ringctrl · mobius</title><link rel="stylesheet" href="../style.css"></head>
+<body><main><header nav="n"><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav></header><article><h1>s10_bluetooth_ringctrl</h1>
+<p class="meta">Python · 更新 2026-06-01 · <a href="https://github.com/mobius/s10_bluetooth_ringctrl">GitHub ↗</a></p>
+<p>把杰理芯片方案的 S10 蓝牙遥控器/飞鼠,在 Hyprland/Omarchy 下重映射为窗口与工作区切换;附完整协议逆向文档。</p>
+
+<p class="note">来自 README:</p><p>将珠海杰理（JieLi）芯片方案的 S10 蓝牙遥控器/飞鼠，在 Hyprland/Omarchy 环境下重映射为窗口切换、工作区切换等操作。 **协议破解详情**：见 `S10_PROTOCOL_ANALYSIS.md` S10 遥控器有 7 个实体按键，但**全部通过触摸模拟发送**，而非标准 HID 消费者控制键： &gt; 注意：方向键坐标系与标准触摸板相反（Y 增加 = 上，X 增加 = 左）。 sudo pacman -S python-evdev wtype - `python-evdev`：读取 Linux 输入设备 - `wtype`：Wayland 下模拟按键输入（可选，仅 `key:` / `combo:` 映射需要</p>
+</article>
+<div class="foot">mobius · GitHub Pages · <a href="https://github.com/mobius">github.com/mobius</a></div>
+</main></body></html>

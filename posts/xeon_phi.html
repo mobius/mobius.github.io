@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>xeon_phi · mobius</title><link rel="stylesheet" href="../style.css"></head>
+<body><main><header nav="n"><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav></header><article><h1>xeon_phi</h1>
+<p class="meta">C · 更新 2026-05-22 · <a href="https://github.com/mobius/xeon_phi">GitHub ↗</a></p>
+<p>Xeon Phi 7120P 的 Rocky Linux 8.10 + MPSS 3.8.6 + ICC 16.0 offload 环境搭建与基准。</p>
+
+<p class="note">来自 README:</p><p>&gt; Rocky Linux 8.10 + MPSS 3.8.6 + ICC 16.0 offload environment for Xeon Phi 7120P { for (int i = 0; i __m512d va = _mm512_set1_pd(1.0); __m512d vb = _mm512_set1_pd(2.0); __m512d vc = _mm512_fmadd_pd(va, vb, vc); Compile and deploy: icc -std=c99 -mmic -O3 -openmp -o prog.mic prog.c scp prog.mic mic0:/tmp/ ssh mic0 /tmp/</p>
+</article>
+<div class="foot">mobius · GitHub Pages · <a href="https://github.com/mobius">github.com/mobius</a></div>
+</main></body></html>
