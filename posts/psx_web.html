@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>psx_web · mobius</title><link rel="stylesheet" href="../style.css"></head>
-<body><main><header nav="n"><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav></header><article><h1>psx_web</h1>
+<body><main><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav><article><h1>psx_web</h1>
 <p class="meta">C++ · 更新 2026-09-08 · <a href="https://github.com/mobius/psx_web">GitHub ↗</a></p>
 <p>把 PlayStation 1 模拟器 Avocado 移植到浏览器,工作区设计参考自 segasaturn_web(Ymir→Web)。</p>
 
-<p class="note">来自 README:</p><p>将 [Avocado](https://github.com/JaCzekanski/Avocado)（PlayStation 1 模拟器）移植为浏览器可运行的 Web 版本， 设计方式参考 [mobius/segasaturn_web](https://github.com/mobius/segasaturn_web)（Ymir→Web 移植工作区）。 source tools/emsdk/emsdk_env.sh emcmake cmake -S web -B build-web -DCMAKE_BUILD_TYPE=Release cmake --build build-web --parallel web/serve.sh </p>
+<p class="note">来自 README:</p><p>将 Avocado（PlayStation 1 模拟器）移植为浏览器可运行的 Web 版本， 设计方式参考 mobius/segasaturn_web（Ymir→Web 移植工作区）。 bash source tools/emsdk/emsdk_env.sh emcmake cmake -S web -B build-web -DCMAKE_BUILD_TYPE=Release cmake --build build-web --parallel web/serve.sh 8080        # 打开 http://localhost:8080 测试：node web/test/smoke.cjs（26 项）、node web/test/e2e.cjs（无头浏览器 18 项）。 - avocado/ 为 M</p>
 </article>
 <div class="foot">mobius · GitHub Pages · <a href="https://github.com/mobius">github.com/mobius</a></div>
 </main></body></html>

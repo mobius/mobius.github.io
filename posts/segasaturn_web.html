@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>segasaturn_web · mobius</title><link rel="stylesheet" href="../style.css"></head>
-<body><main><header nav="n"><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav></header><article><h1>segasaturn_web</h1>
+<body><main><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav><article><h1>segasaturn_web</h1>
 <p class="meta">C++ · 更新 2026-10-01 · <a href="https://github.com/mobius/segasaturn_web">GitHub ↗</a></p>
 <p>把 Sega Saturn 模拟器 Ymir 移植到浏览器:Emscripten + CMake 的 wasm 构建工作区。</p>
 
-<p class="note">来自 README:</p><p>将 [Ymir](https://github.com/StrikerX3/Ymir)（Sega Saturn 模拟器）移植为浏览器可运行的 Web 版本。 source tools/emsdk/emsdk_env.sh emcmake cmake -S web -B build-web -G Ninja -DARCHITECTURES=wasm32 -DCMAKE_BUILD_TYPE=Release cmake --build build-web --parallel web/serve.sh 8080        # 打开 http://localhost:8080 测试：`node web/test/smoke.cjs`（</p>
+<p class="note">来自 README:</p><p>将 Ymir（Sega Saturn 模拟器）移植为浏览器可运行的 Web 版本。 bash source tools/emsdk/emsdk_env.sh emcmake cmake -S web -B build-web -G Ninja -DARCHITECTURES=wasm32 -DCMAKE_BUILD_TYPE=Release cmake --build build-web --parallel web/serve.sh 8080        # 打开 http://localhost:8080 测试：node web/test/smoke.cjs（15 项）、node web/test/e2e.cjs（无头浏览器 10 项）。</p>
 </article>
 <div class="foot">mobius · GitHub Pages · <a href="https://github.com/mobius">github.com/mobius</a></div>
 </main></body></html>

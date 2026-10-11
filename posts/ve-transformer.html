@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ve-transformer · mobius</title><link rel="stylesheet" href="../style.css"></head>
-<body><main><header nav="n"><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav></header><article><h1>ve-transformer</h1>
+<body><main><nav><a href="index.html">首页</a><a href="blog.html">博客</a><a href="https://github.com/mobius">GitHub</a></nav><article><h1>ve-transformer</h1>
 <p class="meta">Python · 更新 2026-10-10 · <a href="https://github.com/mobius/ve-transformer">GitHub ↗</a></p>
 <p>在 NEC Vector Engine 向量机上运行 Transformer / 语言模型 / 图像模型推理:原生执行器 + NEC NLC 数学库,逐步验证正确性、按实测调优;只做推理,不含训练。</p>
 
-<p class="note">来自 README:</p><p>面向 NEC Vector Engine 的 Transformer、语言模型和图像模型推理项目。采用原生执行器和 NEC NLC 数学库，逐步验证正确性并按实测结果优化；不包含训练功能。 需要可运行的 VE 设备、NEC 编译器和数学库；本机验证使用 NCC 5.4.1、NLC 3.1.0。先检查环境，再执行带温度守护的基础验证： bash scripts/check_environment.sh bash scripts/validate_ve.sh 1 2 3 设备枚举不等于执行可用。全部硬件测试必须监控温度：CPU 80°C 警告、85°C 停止；VE 70°C 警告、75°C 停止；监控失效也停止。直接运行程序时用 `sc</p>
+<p class="note">来自 README:</p><p>面向 NEC Vector Engine 的 Transformer、语言模型和图像模型推理项目。采用原生执行器和 NEC NLC 数学库，逐步验证正确性并按实测结果优化；不包含训练功能。 需要可运行的 VE 设备、NEC 编译器和数学库；本机验证使用 NCC 5.4.1、NLC 3.1.0。先检查环境，再执行带温度守护的基础验证： bash bash scripts/check_environment.sh bash scripts/validate_ve.sh 1 2 3 设备枚举不等于执行可用。全部硬件测试必须监控温度：CPU 80°C 警告、85°C 停止；VE 70°C 警告、75°C 停止；监控失效也停止。直接运行程序时用 scripts/temperature_guard.py 包装，具体命令见使</p>
 </article>
 <div class="foot">mobius · GitHub Pages · <a href="https://github.com/mobius">github.com/mobius</a></div>
 </main></body></html>
